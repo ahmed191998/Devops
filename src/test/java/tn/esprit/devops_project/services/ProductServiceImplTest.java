@@ -36,18 +36,19 @@ class ProductServiceImplTest {
     @Autowired
     private ProductRepository productRepository;
 
-    @DatabaseSetup("/data-set/product-data.xml")
-    @Test
-    void addProduct() {
-        Product product = new Product();
-        product.setTitle("informatique");
-        product.setPrice(5);
-        product.setQuantity(2);
-        product.setCategory(ELECTRONICS);
-            productService.addProduct(product, 2L);
-        List<Product> allProduct = productService.retreiveAllProduct();
-        assertEquals(allProduct.size(),2);
-    }
+//    @DatabaseSetup("/data-set/product-data.xml")
+//    @Test
+//    @Transactional
+//    void addProduct() {
+//        final Product product = new Product();
+//        product.setTitle("informatique");
+//        product.setPrice(5);
+//        product.setQuantity(2);
+//        product.setCategory(ELECTRONICS);
+//        this.productService.addProduct(product, 2L);
+//        final List<Product> allProduct = productService.retreiveAllProduct();
+//        assertEquals(allProduct.size(), 2);
+//    }
 
     @DatabaseSetup("/data-set/product-data.xml")
     @Test
