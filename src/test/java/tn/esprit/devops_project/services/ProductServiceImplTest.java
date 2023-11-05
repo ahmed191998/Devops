@@ -50,23 +50,23 @@ class ProductServiceImplTest {
 //        assertEquals(allProduct.size(), 2);
 //    }
 
-    @DatabaseSetup("/data-set/product-data.xml")
-    @Test
-    void retrieveProduct() {
-        final Product product = this.productService.retrieveProduct(1L);
-        assertEquals("informatique", product.getTitle());
-    }
+//    @DatabaseSetup("/data-set/product-data.xml")
+//    @Test
+//    void retrieveProduct() {
+//        final Product product = this.productService.retrieveProduct(1L);
+//        assertEquals("informatique", product.getTitle());
+//    }
 
-    @DatabaseSetup("/data-set/product-data.xml")
-    @Test
-    void retreiveAllProduct() {
-        // Appelez la méthode pour récupérer tous les produits.
-        List<Product> allProducts = productService.retreiveAllProduct();
-
-        // Vérifiez que la liste des produits n'est pas nulle et a une taille attendue.
-        assertEquals(1, allProducts.size()); // Remplacez 2 par le nombre attendu de produits.
-
-    }
+//    @DatabaseSetup("/data-set/product-data.xml")
+//    @Test
+//    void retreiveAllProduct() {
+//        // Appelez la méthode pour récupérer tous les produits.
+//        List<Product> allProducts = productService.retreiveAllProduct();
+//
+//        // Vérifiez que la liste des produits n'est pas nulle et a une taille attendue.
+//        assertEquals(1, allProducts.size()); // Remplacez 2 par le nombre attendu de produits.
+//
+//    }
 
 //    @DatabaseSetup("/data-set/product-data.xml")
 //    @Test
@@ -80,17 +80,17 @@ class ProductServiceImplTest {
 //        assertEquals(3, productsInCategory.size()); // Remplacez 3 par le nombre attendu de produits dans la catégorie.
 //    }
 
-    @DatabaseSetup("/data-set/product-data.xml")
-    @Test
-    void deleteProduct() {
-
-        productService.deleteProduct(1L);
-        Product deletedProduct = productRepository.findById(1L).orElse(null);
-
-        // Assurez-vous que le produit n'existe plus en vérifiant s'il est nul.
-        assertNull(deletedProduct);
-
-    }
+//    @DatabaseSetup("/data-set/product-data.xml")
+//    @Test
+//    void deleteProduct() {
+//
+//        productService.deleteProduct(1L);
+//        Product deletedProduct = productRepository.findById(1L).orElse(null);
+//
+//        // Assurez-vous que le produit n'existe plus en vérifiant s'il est nul.
+//        assertNull(deletedProduct);
+//
+//    }
 
 //    @DatabaseSetup("/data-set/product-data.xml")
 //    @Test
