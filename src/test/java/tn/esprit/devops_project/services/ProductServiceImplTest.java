@@ -1,7 +1,6 @@
 package tn.esprit.devops_project.services;
 
-import com.github.springtestdbunit.DbUnitTestExecutionListener;
-import com.github.springtestdbunit.annotation.DatabaseSetup;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,12 +22,12 @@ import static tn.esprit.devops_project.entities.ProductCategory.ELECTRONICS;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-@Transactional
-@TestExecutionListeners({DependencyInjectionTestExecutionListener.class,
-        DirtiesContextTestExecutionListener.class,
-        TransactionalTestExecutionListener.class,
-        DbUnitTestExecutionListener.class})
-@ActiveProfiles("test")
+//@Transactional
+//@TestExecutionListeners({DependencyInjectionTestExecutionListener.class,
+//        DirtiesContextTestExecutionListener.class,
+//        TransactionalTestExecutionListener.class,
+//        DbUnitTestExecutionListener.class})
+//@ActiveProfiles("test")
 class ProductServiceImplTest {
 
     @Autowired
