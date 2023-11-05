@@ -50,6 +50,7 @@ class StockServiceImplTest {
         assertEquals("stock 1", stock.getTitle());
     }
 
+    @DatabaseSetup("/data-set/stock-data.xml")
     @Test
     void retrieveAllStock() {
         final List<Stock> stock = this.stockService.retrieveAllStock();
