@@ -21,7 +21,7 @@ class OperatorServiceImplTest {
 
 
 
-    
+
 //
 //    @Test
 //    void deleteOperator() {
