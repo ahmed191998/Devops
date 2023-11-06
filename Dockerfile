@@ -1,4 +1,4 @@
 FROM openjdk:11
 EXPOSE 8082
-ADD target/devops_project.jar devops_project.jar
-ENTRYPOINT ["java" , "-jar" ,"/devops_project.jar"]
+ADD target/devops-integration.jar devops-integration.jar
+ENTRYPOINT ["java","-jar","/devops-integration.jar"]
