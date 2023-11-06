@@ -9,10 +9,19 @@ class OperatorServiceImplTest {
 //    @Test
 //    void retrieveAllOperators() {
 //    }
+
+
+
+
+
 //
 //    @Test
 //    void addOperator() {
 //    }
+
+
+
+    
 //
 //    @Test
 //    void deleteOperator() {
