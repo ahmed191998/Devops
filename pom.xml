@@ -130,7 +130,7 @@
             </plugin>
 
         </plugins>
-        <finalName>devops_project</finalName>
+        <finalName>devops-integration</finalName>
     </build>
 
 </project>
